@@ -1,0 +1,2 @@
+String title,String code,String passscore,String startdate,String fromtime,String EndDate,String totime,String duration,String positivescore,String negetivescore,String Questionscount
+autoexam_testcase6,10,60,1402/06/05,10:00,1402/06/30,11:00,10,0.5,0.25,3

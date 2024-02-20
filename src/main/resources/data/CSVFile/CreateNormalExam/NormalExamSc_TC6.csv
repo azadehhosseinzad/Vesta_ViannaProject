@@ -1,0 +1,2 @@
+String title,String code,String passscore,String startdate,String fromtime,String endDate,String totime,String duration
+normalExam_6,10,60,1402/05/05,10:00,1402/05/30,11:00,10

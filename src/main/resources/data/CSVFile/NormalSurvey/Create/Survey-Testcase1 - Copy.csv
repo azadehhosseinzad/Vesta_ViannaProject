@@ -1,0 +1,2 @@
+String titlesurvey,String StartDate,String fromtime,String endDate,String totime,String firstQuestion,String secondQuestion,String thirdQuestion,String firstAnswer,String secondAnswer,String thrirdAnswer
+Normalsurvey,1402/08/01,01:00,1402/12/29,00:30,firstQuestion,secondQuestion,thirdQuestion,firstAnswer,secondAnswer,thrirdAnswer
