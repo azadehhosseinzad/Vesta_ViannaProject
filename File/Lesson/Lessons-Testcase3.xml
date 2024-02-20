@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<records xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<record>
+		<Row>1</Row>
+		<LessonCode>363</LessonCode>
+		<LessonTitle>افزودن درس با اکسل</LessonTitle>
+		<UnitCount>1</UnitCount>
+		<DepartmentCode>0</DepartmentCode>
+		<TermCode>965</TermCode>
+		<LessonGroup>1</LessonGroup>
+	</record>
+</records>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<records xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<record>
+		<Row>1</Row>
+		<UserName>student</UserName>
+		<RoleId>16</RoleId>
+		<PresentedLessons>32</PresentedLessons>
+	</record>
+</records>

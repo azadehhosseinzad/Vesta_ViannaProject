@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<records xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<record>
+		<Row>1</Row>
+		<Username></Username>
+		<DepartmentCode></DepartmentCode>
+		<TermCode></TermCode>
+		<LessonCode></LessonCode>
+		<LessonGroup></LessonGroup>
+		<RoleId></RoleId>
+	</record>
+	<record/>
+</records>
