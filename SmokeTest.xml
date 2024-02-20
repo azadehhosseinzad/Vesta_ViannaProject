@@ -4,6 +4,18 @@
     <test thread-count="5" name="Test">
         <classes>
             <class name="Admin_TestCase_SmokeTest.Testcase_Main"/>
+            <class name="Admin_TestCase_SmokeTest.Testcase_Video"/>
+            <class name="Admin_TestCase_SmokeTest.Testcase_H5p"/>
+            <class name="Admin_TestCase_SmokeTest.Testcase_FileContent"/>
+            <class name="Admin_TestCase_SmokeTest.Testcase_Forum"/>
+            <class name="Admin_TestCase_SmokeTest.Testcase_Practice"/>
+            <class name="Admin_TestCase_SmokeTest.Testcase_Project"/>
+            <class name="Admin_TestCase_SmokeTest.Testcase_Surveynormal"/>
+            <class name="Admin_TestCase_SmokeTest.TestCase_MatrixSurvey"/>
+            <class name="Admin_TestCase_SmokeTest.Testcase_AddQuestion"/>
+            <class name="Admin_TestCase_SmokeTest.Testcase_NormalExam"/>
+            <class name="Admin_TestCase_SmokeTest.Testcase_AutoExam"/>
+            <class name="Admin_TestCase_SmokeTest.Testcase_CreateUser"/>
 
 
         </classes>
