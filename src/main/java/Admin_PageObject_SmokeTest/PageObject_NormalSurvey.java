@@ -115,7 +115,8 @@ public class PageObject_NormalSurvey {
 		selectpresentedlesson.click();
 		wait.until(el -> AddActivity);
 		AddActivity.click();
-		wait.until(el -> survey);
+		//wait.until(el -> survey);
+	   Thread.sleep(1000);
 		survey.click();
 		createsurvey.click();
 		wait.until(el -> NormalSurvey);

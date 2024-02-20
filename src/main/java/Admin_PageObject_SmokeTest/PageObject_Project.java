@@ -64,7 +64,7 @@ public class PageObject_Project {
 	
 	public void CreateProject(WebDriver driver,String title,String begindate,String starttime,String enddate,String endtime) throws InterruptedException {
 		
-	    Wait<WebDriver> wait = new WebDriverWait(driver, 30000);
+	    Wait<WebDriver> wait = new WebDriverWait(driver, 40000);
 	    wait.until(el -> SelectAllLesson);
 		SelectAllLesson.click();
 		wait.until(el -> AllLesson);
@@ -72,6 +72,7 @@ public class PageObject_Project {
 		selectlesson.click();
 		selectpresentedlesson.click();
 		AddActivity.click();
+		Thread.sleep(1000);
 		ChooseProject.click();
 		AddProject.click();
 		//Insert Practice
@@ -79,14 +80,15 @@ public class PageObject_Project {
 		Begindate.sendKeys(begindate);
 		Starttime.click();
 		wait.until(el -> Starttime);
-		//Thread.sleep(2000);
 		Starttime.sendKeys(starttime);
+		Thread.sleep(1000);
 		StartSelect.click();
 		Enddate.sendKeys(enddate);
 		Endtime.click();
 		wait.until(el -> Endtime);
 		//Thread.sleep(2000);
 		Endtime.sendKeys(endtime);
+		Thread.sleep(1000);
 		EndSelect.click();
 	
         JavascriptExecutor js = (JavascriptExecutor) driver;

@@ -104,6 +104,7 @@ public class PageObject_MatrixSurvey {
 		selectlesson.click();
 		selectpresentedlesson.click();
 		AddActivity.click();
+	   Thread.sleep(1000);
 		survey.click();
 		createsurvey.click();
 		wait.until(el -> survey_matrix);

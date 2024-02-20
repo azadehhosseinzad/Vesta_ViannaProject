@@ -18,7 +18,7 @@ public class Testcase_FileContent {
 	WebDriver driver;
   @Test(dataProvider="InsertFilecontent",dataProviderClass= DataProviderMinimal.class)
   public void f(String Title,String description,String Startdate,String frometime,String enddate,String totime,String Upload) throws InterruptedException {
-	  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	//  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	
 	  
 	  PageObject_FileContent createfcontent=PageFactory.initElements(driver,PageObject_FileContent  .class);

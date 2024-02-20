@@ -30,7 +30,7 @@ public class PageObject_Video {
 	@FindBy(xpath="//a[@class='lpm uk-text-success']") 
 	WebElement section;
 	
-	@FindBy(xpath="/html/body/div[5]/div/div[3]/div[1]/div/div/div/div/div/div/span[2]/div/div/div/div[1]/ul/li[2]/a") 
+	@FindBy(xpath="//a[.='\uE04Bفایل ویدیویی']")
 	WebElement choosevideo;
 	
 	@FindBy(id="FileTitle") 
@@ -75,25 +75,26 @@ public class PageObject_Video {
 		selectpresentedlesson.click();
 		part.click();
 		section.click();
+		Thread.sleep(1000);
 		choosevideo.click();
 		Title.sendKeys(title);
 		Description.sendKeys(description);
 		startDate.sendKeys(stardate);
 		FromTime.click();
-		wait.until(el -> FromTime);
-		//Thread.sleep(2000);
+		Thread.sleep(1000);
 		FromTime.sendKeys(fromTime);
+		Thread.sleep(1000);
 		SelectFromTime.click();
 		EndDate.sendKeys(endDate);
+		Thread.sleep(1000);
 		ToTime.click();
-		wait.until(el -> ToTime);
-		//Thread.sleep(2000);
+		Thread.sleep(1000);
 		ToTime.sendKeys(toTime);
 		SelectToTime.click();
 		 JavascriptExecutor js = (JavascriptExecutor) driver;	
 	     js.executeScript("window.scrollBy(0,1300)");
 		HttpPostedFileBase.sendKeys(Upload);
-		Thread.sleep(10000);
+		Thread.sleep(7000);
 		 JavascriptExecutor js1 = (JavascriptExecutor) driver;	
 	     js1.executeScript("window.scrollBy(0,1200)");
 		createAttachment.click();

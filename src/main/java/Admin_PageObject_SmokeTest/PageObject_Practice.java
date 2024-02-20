@@ -28,7 +28,7 @@ public class PageObject_Practice {
 	@FindBy(xpath="//a[contains(@class,'top_menu_toggle md-btn')]") 
 	WebElement AddActivity;
 	
-	@FindBy(xpath="//*[@id=\"page_content_inner\"]/div[2]/div/div/div[1]/div/div/div/div/div[1]/div/a[6]") 
+	@FindBy(xpath="//span[.='تکلیف']")
 	WebElement choosepractice;
 	
 	@FindBy(css=".md-btn-success") 
@@ -84,15 +84,14 @@ public class PageObject_Practice {
 		Titlepractice.sendKeys(title);
 		Begindate.sendKeys(begindate);
 		Starttime.click();
-		wait.until(el -> Starttime);
-		//Thread.sleep(2000);
+		//wait.until(el -> Starttime);
 		Starttime.sendKeys(starttime);
+		Thread.sleep(1000);
 		StartSelect.click();
 		Enddate.sendKeys(enddate);
 		Endtime.click();
-		wait.until(el -> Endtime);
-		//Thread.sleep(2000);
 		Endtime.sendKeys(endtime);
+		Thread.sleep(1000);
 		EndSelect.click();
 		AfterAnswer.click();
         JavascriptExecutor js = (JavascriptExecutor) driver;

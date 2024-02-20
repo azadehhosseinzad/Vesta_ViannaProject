@@ -14,13 +14,12 @@ import org.testng.annotations.AfterMethod;
 public class Testcase_Project {
 	WebDriver driver;
 
-  @Test(dataProvider="InsertProject_TC2",dataProviderClass= DataProviderMinimal.class)
+  @Test(dataProvider="InsertProject_TC1",dataProviderClass= DataProviderMinimal.class)
 
 	  //Add New Practice
-	
-	  public void f(String title,String begindate,String starttime,String enddate,String endtime) throws InterruptedException {
-		  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		 
+
+  public void f(String title,String begindate,String starttime,String enddate,String endtime) throws InterruptedException {
+	  //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		  
 		  PageObject_Project MinimalLesson=PageFactory.initElements(driver, PageObject_Project.class);
 		  MinimalLesson.CreateProject(driver, title, begindate, starttime, enddate, endtime);

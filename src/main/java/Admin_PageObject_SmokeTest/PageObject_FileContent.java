@@ -29,8 +29,8 @@ public class PageObject_FileContent {
 	@FindBy(xpath="//a[@class='lpm uk-text-success']") 
 	WebElement section;
 		
-	@FindBy(xpath="/html/body/div[5]/div/div[3]/div[1]/div/div/div/div/div/div/span[2]/div/div/div/div[1]/ul/li[1]") 
-	WebElement Selecth5p;
+	@FindBy(linkText="\uE873 محتوا")
+	WebElement SelectFilecontent;
 		
 	@FindBy(id="Title") 
 	WebElement title;
@@ -73,24 +73,25 @@ public class PageObject_FileContent {
 			selectpresentedlesson.click();
 			part.click();
 			section.click();
-			//Thread.sleep(1000);
-			wait.until(el -> Selecth5p);
-			Selecth5p.click();
+			Thread.sleep(1000);
+			wait.until(el -> SelectFilecontent);
+			SelectFilecontent.click();
 			title.sendKeys(Title);
 			Description.sendKeys(description);
 			startDate.sendKeys(Startdate);
 			FromTime.click();
-			//Thread.sleep(2000);
-			wait.until(el -> FromTime);
+			Thread.sleep(1000);
+		//	wait.until(el -> FromTime);
 			FromTime.sendKeys(frometime);
+			Thread.sleep(1000);
 			SelectFromTime.click();
 			EndDate.sendKeys(enddate);
 			ToTime.click();
-			wait.until(el -> ToTime);
-			//Thread.sleep(2000);
+			//wait.until(el -> ToTime);
+			Thread.sleep(1000);
 			ToTime.sendKeys(totime);
-			wait.until(el -> SelectToTime);
-			//Thread.sleep(2000);
+			//wait.until(el -> SelectToTime);
+			Thread.sleep(1000);
 			SelectToTime.click();
 			driver.switchTo().frame(0);
 		    driver.findElement(By.cssSelector("html")).click();
